@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     }
 
     try {
-        const response = await fetch('https://api.bland.ai/api/v1/calls', {
+        const response = await fetch('https://api.bland.ai/v1/calls', {
             method: 'POST',
             headers: {
                 'Authorization': process.env.BLAND_API_KEY,
@@ -18,4 +18,5 @@ export default async function handler(req, res) {
     } catch (error) {
         return res.status(500).json({ error: error.message });
     }
+
 }
