@@ -8,130 +8,101 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<script src="app.js"></script>
 <body class="bg-[#0A0A0A] text-[#EDEDED] font-sans antialiased">
 
     <!-- NAV -->
     <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="font-medium">Automate.io</span>
+            <a href="#" class="flex items-center gap-2 font-medium">
+                <i data-lucide="command" class="w-5 h-5 text-gray-400"></i>
+                <span>Automate.io – Dental AI</span>
+            </a>
             <div class="hidden md:flex items-center gap-6">
                 <a href="#services" class="text-sm text-gray-300 hover:text-white">How It Works</a>
-                <a href="#contact" class="text-sm bg-emerald-500 text-white px-4 py-2 rounded-full font-medium hover:bg-emerald-600">
-                    Book Free Demo
-                </a>
+                <button id="call-now-btn" class="text-sm bg-emerald-500 text-white px-4 py-2 rounded-full font-medium hover:bg-emerald-600 flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i>Try Live AI
+                </button>
+                <a href="#contact" class="text-sm bg-white text-black px-4 py-2 rounded-full font-medium hover:bg-gray-200">Book Free Demo</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <main class="pt-32 pb-24 px-6">
+    <main id="main-content" class="pt-32 pb-24 px-6">
         <section class="max-w-4xl mx-auto text-center mt-20 mb-32">
 
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-gray-300 mb-8">
                 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                Accepting Dental Clinics in Dehradun
+                Now onboarding Dental Clinics in Dehradun
             </div>
 
-            <h1 class="text-5xl md:text-6xl font-semibold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">
+            <h1 class="text-5xl md:text-7xl font-semibold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">
                 Never Miss a Dental Appointment Again.
             </h1>
 
-            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-6">
-                Our 24/7 AI Receptionist answers calls, books appointments, sends reminders,
-                and follows up with patients automatically — even after clinic hours.
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">
+                Our 24/7 AI Receptionist answers patient calls, books appointments, sends reminders,
+                and follows up automatically — even after clinic hours.
             </p>
 
-            <p class="text-sm text-gray-500 mb-10">
-                Built for dental clinics in Dehradun. Setup in 48 hours.
-            </p>
             <div class="flex items-center justify-center gap-4">
-                <button id="call-now-btn" 
-                    class="bg-emerald-500 text-white px-6 py-3 rounded-full font-medium hover:bg-emerald-600">
-                    Try Live AI Receptionist
-                </button>
-            
-                <a href="#contact" 
-                    class="px-6 py-3 rounded-full font-medium border border-white/10 hover:bg-white/5">
-                    Book Free Demo
-                </a>
-            </div>
-            <div class="flex items-center justify-center gap-4">
-                <a href="#services" class="bg-white text-black px-6 py-3 rounded-full font-medium hover:scale-105">
-                    See How It Works
-                </a>
+                <a href="#services" class="bg-white text-black px-6 py-3 rounded-full font-medium hover:scale-105">See How It Works</a>
+                <a href="#contact" class="px-6 py-3 rounded-full font-medium border border-white/10 hover:bg-white/5">Book Free Demo</a>
             </div>
         </section>
 
-        <!-- SERVICES -->
         <section id="services" class="max-w-6xl mx-auto mb-32">
-            <h2 class="text-2xl font-medium mb-12 text-center">
-                What Our AI Receptionist Handles
-            </h2>
+            <h2 class="text-2xl font-medium mb-12 text-center">What Our AI Receptionist Handles</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02]">
+                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400">
+                        <i data-lucide="phone-call" class="w-6 h-6"></i>
+                    </div>
                     <h3 class="text-xl font-medium mb-3">24/7 Call Answering</h3>
-                    <p class="text-gray-400">
-                        Never miss patient inquiries — even after hours.
-                    </p>
+                    <p class="text-gray-400">Never miss new patient inquiries — even after clinic hours.</p>
                 </div>
 
-                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02]">
+                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 text-emerald-400">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
                     <h3 class="text-xl font-medium mb-3">Appointment Booking</h3>
-                    <p class="text-gray-400">
-                        Automatically schedule appointments directly into your calendar.
-                    </p>
+                    <p class="text-gray-400">Automatically schedule appointments directly into your calendar.</p>
                 </div>
 
-                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02]">
+                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400">
+                        <i data-lucide="bell" class="w-6 h-6"></i>
+                    </div>
                     <h3 class="text-xl font-medium mb-3">Reminder Calls & SMS</h3>
-                    <p class="text-gray-400">
-                        Reduce no-shows with automatic reminders.
-                    </p>
+                    <p class="text-gray-400">Reduce no-shows with automatic reminders.</p>
                 </div>
 
-                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02]">
+                <div class="p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-6 text-orange-400">
+                        <i data-lucide="message-square" class="w-6 h-6"></i>
+                    </div>
                     <h3 class="text-xl font-medium mb-3">Patient Follow-Up</h3>
-                    <p class="text-gray-400">
-                        Follow up with treatment inquiries and collect feedback automatically.
-                    </p>
+                    <p class="text-gray-400">Follow up with treatment inquiries and collect feedback automatically.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- CONTACT -->
         <section id="contact" class="max-w-3xl mx-auto text-center border-t border-white/5 pt-20">
-            <h2 class="text-3xl font-medium mb-4">
-                Book Your Free AI Receptionist Demo
-            </h2>
+            <h2 class="text-3xl font-medium mb-4">Book Your Free AI Receptionist Demo</h2>
 
             <form class="flex flex-col gap-4 text-left max-w-md mx-auto" id="consultation-form">
-
-                    <input type="text" name="clinic_name" placeholder="Clinic Name" required
-                        class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white">
-                
-                    <input type="text" name="full_name" placeholder="Doctor Name" required
-                        class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white">
-                
-                    <input type="tel" name="phone" placeholder="+91 Phone Number" required
-                        class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white">
-                
-                    <button type="submit"
-                        class="w-full bg-white text-black font-medium rounded-lg px-4 py-3 hover:bg-gray-200"
-                        id="submit-btn">
-                        <span id="btn-text">Schedule Free Demo</span>
-                    </button>
-                
-                    <p id="form-success" class="hidden text-green-400 text-center text-sm mt-2"></p>
-
-              </form>
+                <input type="text" name="clinic_name" placeholder="Clinic Name" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white">
+                <input type="text" name="doctor_name" placeholder="Doctor Name" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white">
+                <input type="tel" name="phone" placeholder="+91 Phone Number" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white">
+                <button type="submit" class="w-full bg-white text-black font-medium rounded-lg px-4 py-3 hover:bg-gray-200">
+                    Schedule Free Demo
+                </button>
+                <p id="form-success" class="hidden text-green-400 text-center text-sm mt-2"></p>
+            </form>
         </section>
-
     </main>
-
-</body>
-</html>
