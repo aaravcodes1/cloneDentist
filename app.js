@@ -1,7 +1,7 @@
 // --- 1. CONFIGURATION ---
 // ✅ API key removed from frontend - now stored in Vercel Environment Variables
 const YOUR_PHONE_NUMBER = "+918869875602";
-const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/wur5fg7xb1gyqnmwr7d3uozb0fu76a92";
+const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/3vc1zkim0ww3tfkg04ibo4alwg5tcz32";
 
 const AI_CONFIG = {
     name: "Riley",
